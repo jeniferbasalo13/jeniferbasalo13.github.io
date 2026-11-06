@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jenifer Basalo — Remote Bookkeeper &amp; Executive Assistant</title>
+<meta name="description" content="Jenifer Basalo — remote bookkeeper and executive assistant. BS Accountancy, Certified Tax Technician. Bookkeeping, AP, reconciliations, property operations and executive admin. Based in Cebu City, Philippines.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b2a1c'/%3E%3Cpath d='M8 46h48M8 50h48' stroke='%23d8443a' stroke-width='2'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial Narrow,Arial,sans-serif' font-weight='700' font-size='28' fill='%23f3f0e4'%3EJB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4f2e9; --sheet:#fffdf6; --rule:#d7e6da; --rule-strong:#b9d3c0;
+  --ink:#13251c; --muted:#4f6357; --green:#1d6a44; --green-2:#0b2a1c;
+  --red:#c63a2f; --chip:#e8f1ea; --line:#d9ddd0; --shadow:0 1px 0 rgba(0,0,0,.04),0 8px 24px -14px rgba(20,40,30,.35);
+  --hero:#0b2a1c; --hero-ink:#eef3ea; --hero-muted:#b3c7b9; --hero-rule:rgba(140,210,170,.10);
+  --display:"Barlow Condensed","Arial Narrow",sans-serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --hand:"Caveat","Segoe Print",cursive;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#0d1612; --sheet:#121d18; --rule:rgba(120,190,150,.09); --rule-strong:rgba(120,190,150,.22);
+    --ink:#e5ede6; --muted:#9fb3a6; --green:#62c792; --red:#ff7a6b; --chip:#1a2a22; --line:#24352c;
+    --shadow:0 1px 0 rgba(255,255,255,.03),0 10px 26px -16px rgba(0,0,0,.8);
+    --hero:#07170f;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:var(--sans);color:var(--ink);background-color:var(--paper);
+  background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--rule) 31px 32px);
+  line-height:1.55;font-size:16px}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.mono{font-family:var(--mono)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- HERO ---------- */
+.hero{background:var(--hero);color:var(--hero-ink);position:relative;overflow:hidden;
+  background-image:
+    repeating-linear-gradient(to bottom,transparent 0 31px,var(--hero-rule) 31px 32px),
+    linear-gradient(to right,transparent 0 calc(100% - 132px),rgba(216,68,58,.28) calc(100% - 132px) calc(100% - 131px),transparent calc(100% - 131px) calc(100% - 127px),rgba(216,68,58,.28) calc(100% - 127px) calc(100% - 126px),transparent calc(100% - 126px));
+  padding:28px 0 92px}
+.ledger-head{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-muted);border-bottom:1px solid rgba(255,255,255,.14);padding-bottom:10px;margin-bottom:44px}
+.ledger-head span:last-child{text-align:right}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:56px;align-items:center}
+.eyebrow{font-family:var(--mono);font-size:13px;color:#8fd6ab;letter-spacing:.06em;text-transform:uppercase;margin:0 0 14px}
+h1{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(56px,9.4vw,124px);line-height:.86;letter-spacing:-.01em;margin:0}
+h1 .last{display:block;color:transparent;-webkit-text-stroke:2px #eef3ea}
+@supports not (-webkit-text-stroke:2px #fff){h1 .last{color:#eef3ea}}
+.role{font-family:var(--display);font-weight:600;font-size:clamp(22px,2.6vw,30px);letter-spacing:.02em;margin:20px 0 0;color:#f3f0e4}
+.role .amp{color:#ff8a7c}
+.intro{max-width:56ch;color:var(--hero-muted);font-size:17px;margin:14px 0 26px}
+.intro strong{color:var(--hero-ink);font-weight:500}
+.btns{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{appearance:none;border:1.5px solid rgba(255,255,255,.4);background:transparent;color:var(--hero-ink);font:600 15px/1 var(--sans);padding:13px 18px;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;min-height:46px;transition:background .15s,border-color .15s,transform .15s}
+.btn:hover{border-color:#fff;background:rgba(255,255,255,.07)}
+.btn:focus-visible{outline:3px solid #8fd6ab;outline-offset:2px}
+.btn.primary{background:#f3f0e4;color:#0b2a1c;border-color:#f3f0e4}
+.btn.primary:hover{background:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.email-text{font-family:var(--mono);font-size:13px;color:var(--hero-muted);margin-top:12px;word-break:break-all}
+
+/* photo voucher */
+.voucher-wrap{position:relative;justify-self:center;width:100%;max-width:330px}
+.voucher{background:#fffdf6;color:#13251c;padding:14px 14px 12px;border-radius:3px;transform:rotate(1.4deg);box-shadow:0 22px 40px -18px rgba(0,0,0,.7);position:relative}
+.voucher:before{content:"";position:absolute;top:-9px;left:50%;width:62px;height:16px;margin-left:-31px;border:3px solid #9aa3a0;border-bottom:none;border-radius:2px 2px 0 0}
+.voucher-top{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#4f6357;padding-bottom:8px;border-bottom:1px dashed #b9c4bb;margin-bottom:10px}
+.photo{aspect-ratio:4/5;overflow:hidden;background:#f1efe8;outline:1px solid #d7ddd5}
+.photo img{width:100%;height:100%;object-fit:cover}
+.stamp{position:absolute;right:-10px;bottom:118px;transform:rotate(-12deg);border:3px double #c63a2f;color:#c63a2f;font:700 15px/1 var(--mono);letter-spacing:.14em;padding:7px 10px 6px;border-radius:4px;background:rgba(255,253,246,.88);text-align:center}
+.stamp small{display:block;font-size:9px;letter-spacing:.1em;margin-top:3px}
+.tape{font-family:var(--mono);font-size:12px;line-height:1.7;margin-top:10px;color:#24372d}
+.tape div{display:flex;justify-content:space-between;gap:8px}
+.tape div span:first-child{overflow:hidden;white-space:nowrap}
+.tape .tick{color:#c63a2f;font-weight:600}
+.tape .tot{border-top:1px solid #24372d;margin-top:4px;padding-top:2px;font-weight:600}
+.note-hand{position:absolute;left:-118px;top:38%;font-family:var(--hand);font-size:24px;color:#ff8a7c;transform:rotate(-6deg);line-height:1;width:110px;text-align:right}
+.note-hand svg{display:block;margin:4px 0 0 auto}
+
+/* ---------- AT A GLANCE ---------- */
+.glance{position:relative;margin-top:-56px;z-index:2}
+.glance-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--sheet);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:6px;overflow:hidden}
+.g{padding:18px 20px 16px;border-left:1px solid var(--line);min-width:0}
+.g:first-child{border-left:none}
+.g .lbl{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);white-space:nowrap}
+.g .val{font-family:var(--display);font-weight:700;font-size:40px;line-height:1.05;white-space:nowrap;margin:2px 0 2px;color:var(--ink)}
+.g .val .tk{color:var(--red);font-family:var(--hand);font-size:28px;margin-left:4px}
+.g .sub{font-size:13.5px;color:var(--muted);line-height:1.4}
+
+/* ---------- NAV ---------- */
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-top:26px}
+@supports not (background:color-mix(in srgb,red 50%,blue)){.nav{background:var(--paper)}}
+.nav ul{list-style:none;margin:0 auto;padding:0 12px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;max-width:1120px;scroll-snap-type:x proximity}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a{display:flex;align-items:center;gap:7px;white-space:nowrap;text-decoration:none;font-size:14px;font-weight:500;color:var(--muted);padding:15px 12px 13px;border-bottom:2px solid transparent;scroll-snap-align:center}
+.nav a .no{font-family:var(--mono);font-size:11px;opacity:.75}
+.nav a:hover{color:var(--ink)}
+.nav a.active{color:var(--ink);border-bottom-color:var(--red)}
+.nav a.active .no{color:var(--red);opacity:1}
+
+/* ---------- SECTIONS ---------- */
+section.blk{padding:68px 0 8px}
+.acct{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-items:end;margin-bottom:28px;padding-bottom:12px;border-bottom:3px double var(--ink)}
+.acct-no{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--ink);padding:4px 8px 3px;border-radius:3px;align-self:center;white-space:nowrap}
+.acct h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(34px,4.6vw,52px);line-height:.95;margin:0;letter-spacing:.005em}
+.acct p{grid-column:1/-1;margin:6px 0 0;color:var(--muted);max-width:68ch}
+
+.card{background:var(--sheet);border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow)}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.svc .card{padding:22px 22px 18px;position:relative;border-top:4px solid var(--green)}
+.svc .code{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.05em}
+.svc h3{font-family:var(--display);font-weight:700;font-size:28px;line-height:1;margin:6px 0 14px;text-transform:uppercase}
+.svc ul{list-style:none;margin:0;padding:0}
+.svc li{padding:9px 0 9px 26px;border-top:1px solid var(--rule-strong);position:relative;font-size:15px}
+.svc li:before{content:"✓";position:absolute;left:2px;top:7px;font-family:var(--hand);font-weight:700;font-size:21px;color:var(--red);line-height:1.2}
+
+/* process */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:s}
+.steps li{padding:18px 18px 20px;border-left:1px solid var(--line);background:var(--sheet);position:relative}
+.steps li:first-child{border-left:none;border-radius:6px 0 0 6px}
+.steps li:last-child{border-radius:0 6px 6px 0}
+.steps-wrap{border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);overflow:hidden}
+.steps .je{font-family:var(--mono);font-size:11.5px;color:var(--red);letter-spacing:.06em}
+.steps h3{font-family:var(--display);font-weight:700;font-size:26px;text-transform:uppercase;margin:4px 0 8px;line-height:1}
+.steps p{margin:0;font-size:14.5px;color:var(--muted)}
+.process-note{font-size:13px;color:var(--muted);margin:12px 2px 0}
+
+/* samples */
+.samples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.doc{padding:0;overflow:hidden;position:relative}
+.doc.wide{grid-column:1/-1}
+.doc-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:16px 18px 12px;border-bottom:1px solid var(--line)}
+.doc-head h3{margin:0;font-size:17px;font-weight:600;line-height:1.25}
+.doc-head .meta{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:3px}
+.tag{flex:none;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.12em;color:var(--red);border:1.5px solid var(--red);border-radius:3px;padding:3px 6px 2px;transform:rotate(-3deg);white-space:nowrap}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule-strong);white-space:nowrap}
+th{font-family:var(--mono);font-size:10.5px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:color-mix(in srgb,var(--chip) 70%,transparent)}
+td.r,th.r{text-align:right}
+td.c,th.c{text-align:center}
+tr.total td{border-top:1.5px solid var(--ink);border-bottom:3px double var(--ink);font-weight:600}
+.ok{color:var(--green);font-weight:600}
+.pend{color:#b7791f;font-weight:600}
+@media (prefers-color-scheme:dark){.pend{color:#f0b85a}}
+.doc-foot{padding:10px 18px 14px;font-size:12.5px;color:var(--muted)}
+.checklist{list-style:none;margin:0;padding:8px 18px 4px}
+.checklist li{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--rule-strong);font-size:14px}
+.checklist li:last-child{border-bottom:none}
+.box{flex:none;width:17px;height:17px;border:1.5px solid var(--ink);border-radius:2px;margin-top:2px}
+.checklist .why{display:block;font-size:12.5px;color:var(--muted)}
+
+/* rec widget */
+.rec{padding:22px}
+.rec-intro{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-start;margin-bottom:16px}
+.rec-intro p{margin:0;max-width:62ch;color:var(--muted);font-size:15px}
+.rec-btns{display:flex;gap:8px;flex-wrap:wrap}
+.sbtn{appearance:none;font:600 14px/1 var(--sans);padding:10px 14px;border-radius:5px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;min-height:40px}
+.sbtn.fill{background:var(--ink);color:var(--paper)}
+.sbtn:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+.rec-cols{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:18px}
+.pane{border:1px solid var(--line);border-radius:5px;overflow:hidden;min-width:0}
+.pane h4{margin:0;padding:10px 12px;font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:color-mix(in srgb,var(--chip) 80%,transparent);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px}
+.pane h4 span:last-child{font-weight:400;color:var(--muted)}
+.lrow{display:grid;grid-template-columns:28px 46px minmax(0,1fr) auto;gap:8px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--rule-strong);font-size:13.5px;cursor:pointer;user-select:none}
+.lrow:last-child{border-bottom:none}
+.lrow:hover{background:color-mix(in srgb,var(--chip) 60%,transparent)}
+.lrow input{width:18px;height:18px;margin:0;accent-color:var(--red);cursor:pointer}
+.lrow .d,.brow .d{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.lrow .t,.brow .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lrow .a,.brow .a{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.lrow.on .a{color:var(--red)}
+.lrow.on .a:after{content:" ✓";font-family:var(--hand);font-weight:700;font-size:17px}
+.neg{color:inherit}
+.brow{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:8px;padding:8px 12px;border-bottom:1px solid var(--rule-strong);font-size:13.5px}
+.brow.bal,.lrow.bal{background:color-mix(in srgb,var(--chip) 45%,transparent);font-weight:600;cursor:default}
+.brow.bankonly .t:after{content:"bank only";font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--red);border:1px solid var(--red);border-radius:2px;padding:0 4px;margin-left:6px;vertical-align:1px}
+.working{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.wk{border:1px solid var(--line);border-radius:5px;padding:12px 14px;font-size:14px;min-width:0}
+.wk h5{margin:0 0 6px;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.wl{display:flex;justify-content:space-between;gap:10px;padding:4px 0}
+.wl .a{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.wl.sub{padding-left:14px;font-size:13px;color:var(--muted)}
+.wl.res{border-top:1.5px solid var(--ink);border-bottom:3px double var(--ink);font-weight:600;margin-top:4px}
+.verdict{margin-top:16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:14px 16px;border-radius:5px;border:1.5px dashed var(--line)}
+.verdict .big{font-family:var(--display);font-weight:800;font-size:30px;text-transform:uppercase;letter-spacing:.03em;line-height:1}
+.verdict.good{border-color:var(--green)}
+.verdict.good .big{color:var(--green)}
+.verdict.bad .big{color:var(--red)}
+.verdict p{margin:0;font-size:14px;color:var(--muted);flex:1;min-width:220px}
+
+/* experience */
+.gantt{padding:16px 18px 14px;margin-bottom:26px}
+.gantt h4{margin:0 0 10px;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.grow{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px;align-items:center;margin:5px 0}
+.grow .nm{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.track{display:grid;grid-template-columns:repeat(25,minmax(0,1fr));height:14px;background:repeating-linear-gradient(to right,transparent 0 calc(100%/25 - 1px),var(--rule-strong) calc(100%/25 - 1px) calc(100%/25));border-radius:2px}
+.bar{background:var(--green);border-radius:2px;height:14px}
+.bar.remote{background:var(--red)}
+.gyears{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px;margin-top:6px}
+.gyears .ys{display:grid;grid-template-columns:repeat(25,minmax(0,1fr));font-family:var(--mono);font-size:11px;color:var(--muted)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin-top:10px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-1px;margin-right:6px}
+.tl{list-style:none;margin:0;padding:0;position:relative}
+.tl:before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:var(--rule-strong)}
+.tl > li{position:relative;padding:0 0 26px 40px}
+.tl > li:before{content:"";position:absolute;left:2px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2.5px solid var(--green)}
+.tl > li.remote:before{border-color:var(--red)}
+.tl .when{font-family:var(--mono);font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;border:1px solid currentColor;border-radius:3px;padding:1px 5px}
+.pill.r{color:var(--red)} .pill.g{color:var(--green)}
+.tl h3{margin:4px 0 2px;font-size:19px;font-weight:600;line-height:1.3}
+.tl .org{color:var(--muted);font-size:15px;margin-bottom:8px}
+.tl ul{margin:0;padding-left:18px}
+.tl ul li{margin:3px 0;font-size:15px}
+.concurrent{font-size:13.5px;color:var(--muted);border-left:3px solid var(--red);padding:6px 0 6px 12px;margin:0 0 24px}
+
+/* credentials */
+.creds{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:20px}
+.creds .card{padding:20px 22px}
+.creds h3{margin:0 0 12px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.cred{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;padding:12px 0;border-top:1px solid var(--rule-strong)}
+.cred:first-of-type{border-top:none;padding-top:0}
+.seal{width:46px;height:46px;border-radius:50%;border:2px solid var(--green);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:16px;color:var(--green)}
+.cred b{display:block;font-weight:600}
+.cred span{color:var(--muted);font-size:14px}
+.tg{margin:0 0 14px}
+.tg:last-child{margin-bottom:0}
+.tg .k{font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:13.5px;background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:5px 11px;white-space:nowrap}
+
+/* cta */
+.cta{border-top:3px double #ff8a7c;background:var(--hero);color:var(--hero-ink);margin-top:72px;padding:62px 0 40px;background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--hero-rule) 31px 32px)}
+.cta-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:end}
+.cta h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(40px,6vw,76px);line-height:.92;margin:0}
+.cta h2 .u{border-bottom:5px double #ff8a7c}
+.cta p{color:var(--hero-muted);font-size:17px;margin:16px 0 0;max-width:52ch}
+.cta .contact{font-family:var(--mono);font-size:14px;line-height:2;color:var(--hero-muted)}
+.cta .contact b{color:var(--hero-ink);font-weight:500;word-break:break-all}
+.foot{border-top:1px solid rgba(255,255,255,.14);margin-top:44px;padding-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--hero-muted)}
+.foot .tk{color:#ff8a7c;font-family:var(--hand);font-size:19px;font-weight:700}
+
+.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,24px);opacity:0;background:#13251c;color:#f3f0e4;border:1px solid rgba(255,255,255,.2);padding:11px 16px;border-radius:6px;font-size:14px;transition:.2s;z-index:50;pointer-events:none;max-width:calc(100% - 32px);text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:980px){
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps li{border-left:none;border-top:1px solid var(--line);border-radius:0!important}
+  .steps li:nth-child(even){border-left:1px solid var(--line)}
+  .steps li:nth-child(-n+2){border-top:none}
+  .steps li:last-child{grid-column:1/-1;border-left:none}
+  .note-hand{display:none}
+}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .voucher-wrap{max-width:280px}
+  .svc{grid-template-columns:1fr}
+  .samples{grid-template-columns:1fr}
+  .rec-cols,.working{grid-template-columns:1fr}
+  .creds{grid-template-columns:1fr}
+  .cta-grid{grid-template-columns:1fr;gap:24px}
+  .glance-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .g:nth-child(3){border-left:none}
+  .g:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media (max-width:560px){
+  body{font-size:15.5px}
+  .wrap{padding:0 16px}
+  .hero{padding:20px 0 84px;background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--hero-rule) 31px 32px)}
+  .ledger-head{margin-bottom:30px;font-size:10.5px}
+  .ledger-head span:first-child{display:none}
+  .voucher-wrap{max-width:240px}
+  .eyebrow{font-size:11.5px}
+  h1 .last{-webkit-text-stroke:1.5px #eef3ea}
+  .btn{flex:1 1 auto;justify-content:center}
+  .g{padding:14px 14px 12px}
+  .g .val{font-size:32px}
+  .g .lbl{font-size:10px}
+  .steps{grid-template-columns:1fr}
+  .steps li,.steps li:nth-child(even){border-left:none;border-top:1px solid var(--line)}
+  .steps li:first-child{border-top:none}
+  .acct{grid-template-columns:1fr}
+  .acct-no{justify-self:start}
+  .rec{padding:16px 14px}
+  .lrow{grid-template-columns:24px minmax(0,1fr) auto;padding:9px 10px}
+  .lrow .d{display:none}
+  .brow{grid-template-columns:minmax(0,1fr) auto;padding:9px 10px}
+  .brow .d{display:none}
+  .grow,.gyears{grid-template-columns:96px minmax(0,1fr);gap:8px}
+  .grow .nm{font-size:12px}
+  .gyears .ys{font-size:10px}
+  .stamp{right:-6px;bottom:108px;font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="ledger-head"><span>General ledger · J. Basalo</span><span>Folio 01 · Cebu City, PH · UTC+8</span></div>
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Accountancy grad · Certified Tax Technician</p>
+        <h1>Jenifer <span class="last">Basalo</span></h1>
+        <p class="role">Remote Bookkeeper <span class="amp">&amp;</span> Executive Assistant</p>
+        <p class="intro">I keep the books and the back office in order: coding bills, reconciling accounts, collecting vendor W-9s and keeping work orders moving. I've done it for a <strong>multi-property real estate owner</strong>, a <strong>construction business</strong>, a <strong>CPA firm</strong> and a <strong>government finance office</strong>.</p>
+        <div class="btns">
+          <button class="btn primary" type="button" data-copy-email>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            Copy email
+          </button>
+          <a class="btn" href="https://www.linkedin.com/in/jenifer-basalo-a15476172/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v5.46h-4v-4.84c0-1.15-.02-2.64-1.6-2.64-1.62 0-1.86 1.26-1.86 2.56v4.92h-4v-11Z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener" data-resume>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>
+            Résumé PDF
+          </a>
+        </div>
+        <div class="email-text">jeniferbasalo13@gmail.com</div>
+      </div>
+
+      <div class="voucher-wrap">
+        <div class="note-hand">ticked &amp; tied
+          <svg width="70" height="26" viewBox="0 0 70 26" fill="none" stroke="#ff8a7c" stroke-width="2" stroke-linecap="round"><path d="M2 6c20 2 40 6 62 16"/><path d="M56 14l8 8-11 2"/></svg>
+        </div>
+        <figure class="voucher" style="margin:0">
+          <div class="voucher-top"><span>Voucher No. JB-2024</span><span>Approved</span></div>
+          <div class="photo"><img src="headshot.jpg" alt="Portrait of Jenifer Basalo in a black blazer" width="640" height="800"></div>
+          <div class="tape" aria-label="Summary">
+            <div><span>BS ACCOUNTANCY ··········</span><span class="tick">✓</span></div>
+            <div><span>CERT. TAX TECHNICIAN ····</span><span class="tick">✓</span></div>
+            <div><span>QUICKBOOKS · EXCEL ······</span><span class="tick">✓</span></div>
+            <div class="tot"><span>READY TO POST ···········</span><span class="tick">✓</span></div>
+          </div>
+          <div class="stamp" aria-hidden="true">POSTED<small>REMOTE · PH</small></div>
+        </figure>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap glance" aria-label="At a glance">
+  <div class="glance-row">
+    <div class="g"><div class="lbl">Experience</div><div class="val num">2 yrs</div><div class="sub">Accounting &amp; admin roles, Jan 2024 – Jan 2026</div></div>
+    <div class="g"><div class="lbl">Remote roles</div><div class="val num">3</div><div class="sub">Bookkeeping, property ops and sales admin</div></div>
+    <div class="g"><div class="lbl">Credential</div><div class="val">CTT<span class="tk">✓</span></div><div class="sub">Certified Tax Technician, April 2023</div></div>
+    <div class="g"><div class="lbl">Degree</div><div class="val">BSA<span class="tk">✓</span></div><div class="sub">BS Accountancy, University of San Jose-Recoletos</div></div>
+  </div>
+</div>
+
+<nav class="nav" aria-label="Sections">
+  <ul>
+    <li><a href="#services"><span class="no">1000</span>Services</a></li>
+    <li><a href="#process"><span class="no">2000</span>How I work</a></li>
+    <li><a href="#samples"><span class="no">3000</span>Work samples</a></li>
+    <li><a href="#try"><span class="no">4000</span>Try a bank rec</a></li>
+    <li><a href="#experience"><span class="no">5000</span>Experience</a></li>
+    <li><a href="#credentials"><span class="no">6000</span>Credentials &amp; tools</a></li>
+    <li><a href="#contact"><span class="no">9000</span>Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+<!-- SERVICES -->
+<section class="blk" id="services">
+  <div class="wrap">
+    <div class="acct"><span class="acct-no">Acct 1000</span><h2>What I take off your plate</h2></div>
+    <div class="svc">
+      <article class="card">
+        <div class="code">1010 · Books</div>
+        <h3>Bookkeeping &amp; AP</h3>
+        <ul>
+          <li>Process and code invoices and bills, then track them to payment</li>
+          <li>Invoicing, purchase orders and payment tracking</li>
+          <li>Reconciliations across multiple accounts</li>
+          <li>Client ledgers kept current to GAAP in QuickBooks and Excel</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="code">1020 · Property</div>
+        <h3>Property operations</h3>
+        <ul>
+          <li>Tenant communications and move-in / move-out coordination</li>
+          <li>Maintenance work orders: create, schedule the vendor, get approval, track to close</li>
+          <li>Vendor compliance: W-9 and EFT details collected before payment</li>
+          <li>Clean, accurate records in the property management system</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="code">1030 · Admin</div>
+        <h3>Executive &amp; sales admin</h3>
+        <ul>
+          <li>CRM updates in Performology, Lead Management Lab, Gateway and RingCentral</li>
+          <li>Daily and weekly sales and lead-source updates for the owner</li>
+          <li>Branded brochures and client proposals in Canva</li>
+          <li>Internal queries answered promptly so payments don't stall</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="blk" id="process">
+  <div class="wrap">
+    <div class="acct"><span class="acct-no">Acct 2000</span><h2>How I work</h2><p>The same five steps every working day, whether the paperwork is a lumber invoice, a leaking faucet or a new lead.</p></div>
+    <div class="steps-wrap">
+      <ol class="steps">
+        <li><div class="je">JE-01</div><h3>Capture</h3><p>Pull in everything new: bills, vendor emails, tenant requests, leads. Nothing lives only in an inbox.</p></li>
+        <li><div class="je">JE-02</div><h3>Code</h3><p>Every bill gets a vendor, GL account and property or job. Every repair gets a work-order number.</p></li>
+        <li><div class="je">JE-03</div><h3>Match</h3><p>Invoice against PO or approved work order. W-9 and EFT on file before a payment is queued.</p></li>
+        <li><div class="je">JE-04</div><h3>Reconcile</h3><p>Tie the books to bank and statement balances. Find the difference; never plug it.</p></li>
+        <li><div class="je">JE-05</div><h3>Report</h3><p>A short update for the owner: what's paid, what needs approval, and the sales and lead numbers.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- SAMPLES -->
+<section class="blk" id="samples">
+  <div class="wrap">
+    <div class="acct"><span class="acct-no">Acct 3000</span><h2>Work samples</h2><p>The kinds of documents I produce every week. All names, properties and figures below are made up.</p></div>
+    <div class="samples">
+
+      <article class="card doc wide">
+        <div class="doc-head"><div><h3>Maintenance work-order log</h3><div class="meta">Week of Nov 10 · 3 properties</div></div><span class="tag">SAMPLE</span></div>
+        <div class="tbl-scroll"><table>
+          <thead><tr><th>WO #</th><th>Unit</th><th>Issue</th><th>Vendor</th><th class="c">W-9</th><th class="r">Approved</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td class="num">1187</td><td>Maple Ct 2B</td><td>Kitchen faucet leak</td><td>Rivera Plumbing</td><td class="c ok">✓</td><td class="r num">$185.00</td><td class="ok">Closed</td></tr>
+            <tr><td class="num">1188</td><td>Oak St 14</td><td>A/C not cooling</td><td>CoolAir Services</td><td class="c ok">✓</td><td class="r pend">Pending</td><td class="pend">Quote sent to owner</td></tr>
+            <tr><td class="num">1189</td><td>Maple Ct 4A</td><td>Move-out paint</td><td>Bright Finish Co.</td><td class="c pend">Req.</td><td class="r num">$640.00</td><td>Booked Nov 14</td></tr>
+            <tr><td class="num">1190</td><td>Elm Ave 7</td><td>Smoke detector</td><td>Handyman (in-house)</td><td class="c">n/a</td><td class="r num">$0.00</td><td class="ok">Closed</td></tr>
+          </tbody>
+        </table></div>
+        <div class="doc-foot">No payment is released on 1189 until the vendor's W-9 is received.</div>
+      </article>
+
+      <article class="card doc wide">
+        <div class="doc-head"><div><h3>AP bill coding sheet</h3><div class="meta">Construction client · Batch 10/03</div></div><span class="tag">SAMPLE</span></div>
+        <div class="tbl-scroll"><table>
+          <thead><tr><th>Vendor</th><th>Inv #</th><th>PO</th><th>GL account</th><th>Job</th><th class="r">Amount</th><th class="c">Match</th></tr></thead>
+          <tbody>
+            <tr><td>Harbor Lumber</td><td class="num">55120</td><td class="num">PO-311</td><td>5010 Materials</td><td class="num">24-07</td><td class="r num">3,412.75</td><td class="c ok">✓</td></tr>
+            <tr><td>Delta Electric</td><td class="num">E-8841</td><td class="num">PO-309</td><td>5200 Subcontractors</td><td class="num">24-07</td><td class="r num">2,800.00</td><td class="c ok">✓</td></tr>
+            <tr><td>Summit Rentals</td><td class="num">SR-2290</td><td class="num">PO-314</td><td>5300 Equipment rental</td><td class="num">24-09</td><td class="r num">1,165.40</td><td class="c ok">✓</td></tr>
+            <tr class="total"><td colspan="5">Batch total · 3 bills</td><td class="r num">7,378.15</td><td></td></tr>
+          </tbody>
+        </table></div>
+        <div class="doc-foot">✓ = invoice, PO and delivery receipt agree on vendor, quantity and price.</div>
+      </article>
+
+      <article class="card doc">
+        <div class="doc-head"><div><h3>Weekly lead-source report</h3><div class="meta">Sales agency · Mon–Fri</div></div><span class="tag">SAMPLE</span></div>
+        <div class="tbl-scroll"><table>
+          <thead><tr><th>Lead source</th><th class="r">New leads</th><th class="r">Appointments</th><th class="r">Closed</th></tr></thead>
+          <tbody>
+            <tr><td>Website form</td><td class="r num">18</td><td class="r num">6</td><td class="r num">2</td></tr>
+            <tr><td>Referrals</td><td class="r num">9</td><td class="r num">5</td><td class="r num">3</td></tr>
+            <tr><td>Paid social</td><td class="r num">14</td><td class="r num">3</td><td class="r num">1</td></tr>
+            <tr><td>Inbound calls</td><td class="r num">7</td><td class="r num">2</td><td class="r num">1</td></tr>
+            <tr class="total"><td>Week total</td><td class="r num">48</td><td class="r num">16</td><td class="r num">7</td></tr>
+          </tbody>
+        </table></div>
+        <div class="doc-foot">Note to owner: referrals were 19% of leads but 3 of 7 closes.</div>
+      </article>
+
+      <article class="card doc">
+        <div class="doc-head"><div><h3>New-vendor setup checklist</h3><div class="meta">Before the first payment</div></div><span class="tag">TEMPLATE</span></div>
+        <ul class="checklist">
+          <li><span class="box"></span><span>W-9 received<span class="why">Legal name and TIN match the name on the invoice.</span></span></li>
+          <li><span class="box"></span><span>EFT details received and confirmed<span class="why">Verified with the vendor by phone at a known number, never by reply to the email.</span></span></li>
+          <li><span class="box"></span><span>Owner approval logged for the first work order</span></li>
+          <li><span class="box"></span><span>Vendor record created in the PM system and QuickBooks</span></li>
+          <li><span class="box"></span><span>Documents filed: <span class="mono" style="font-size:12.5px">/Vendors/[Name]/</span></span></li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- WIDGET -->
+<section class="blk" id="try">
+  <div class="wrap">
+    <div class="acct"><span class="acct-no">Acct 4000</span><h2>Try it: tick and tie a bank rec</h2><p>A month-end bank reconciliation for a fictional contractor. Tick each book entry that appears on the bank statement. When the adjusted balances agree, the account is reconciled.</p></div>
+    <div class="card rec">
+      <div class="rec-intro">
+        <p>Bank-only items (the fee and the interest) are adjusted on the book side automatically. Every figure in the working below updates as you tick.</p>
+        <div class="rec-btns"><button class="sbtn fill" type="button" id="auto">Show me the answer</button><button class="sbtn" type="button" id="reset">Reset</button></div>
+      </div>
+      <div class="rec-cols">
+        <div class="pane">
+          <h4><span>Book cash ledger · October</span><span>tick if on statement</span></h4>
+          <div class="lrow bal"><span></span><span class="d">10/01</span><span class="t">Opening balance</span><span class="a">12,480.00</span></div>
+          <div id="book"></div>
+          <div class="lrow bal"><span></span><span class="d">10/31</span><span class="t">Book balance</span><span class="a" id="bookBal"></span></div>
+        </div>
+        <div class="pane">
+          <h4><span>Bank statement · October</span><span>read-only</span></h4>
+          <div class="brow bal"><span class="d">10/01</span><span class="t">Opening balance</span><span class="a">12,480.00</span></div>
+          <div id="bank"></div>
+          <div class="brow bal"><span class="d">10/31</span><span class="t">Statement balance</span><span class="a" id="bankBal"></span></div>
+        </div>
+      </div>
+      <div class="working">
+        <div class="wk"><h5>Bank side</h5><div id="wkBank"></div></div>
+        <div class="wk"><h5>Book side</h5><div id="wkBook"></div></div>
+      </div>
+      <div class="verdict" id="verdict" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="blk" id="experience">
+  <div class="wrap">
+    <div class="acct"><span class="acct-no">Acct 5000</span><h2>Experience</h2></div>
+
+    <div class="card gantt" aria-hidden="true">
+      <h4>Jan 2024 – Jan 2026 · roles by month</h4>
+      <div class="grow"><span class="nm">EA · Agency</span><div class="track"><div class="bar remote" style="grid-column:15/25"></div></div></div>
+      <div class="grow"><span class="nm">EA · Real estate</span><div class="track"><div class="bar remote" style="grid-column:13/25"></div></div></div>
+      <div class="grow"><span class="nm">Dept. of Health</span><div class="track"><div class="bar" style="grid-column:8/24"></div></div></div>
+      <div class="grow"><span class="nm">GoHireVirtual</span><div class="track"><div class="bar remote" style="grid-column:5/26"></div></div></div>
+      <div class="grow"><span class="nm">CPA firm (DMD)</span><div class="track"><div class="bar" style="grid-column:1/9"></div></div></div>
+      <div class="gyears"><span></span><div class="ys"><span style="grid-column:1">2024</span><span style="grid-column:13">2025</span><span style="grid-column:24/26;text-align:right">2026</span></div></div>
+      <div class="legend"><span><i style="background:var(--red)"></i>Remote</span><span><i style="background:var(--green)"></i>On-site, Cebu City</span></div>
+    </div>
+
+    <p class="concurrent">Several roles ran at the same time: through 2025, remote client work ran alongside her on-site Department of Health role. Dates are exactly as on her résumé.</p>
+
+    <ol class="tl">
+      <li class="remote">
+        <div class="when">Mar 2025 – Dec 2025 <span class="pill r">Remote</span></div>
+        <h3>Executive Assistant</h3>
+        <div class="org">Agency owner</div>
+        <ul>
+          <li>Kept CRM records current across Performology, Lead Management Lab, Gateway and RingCentral</li>
+          <li>Reported daily and weekly sales and lead sources to the owner</li>
+          <li>Designed branded brochures and client proposals in Canva</li>
+        </ul>
+      </li>
+      <li class="remote">
+        <div class="when">Jan 2025 – Dec 2025 <span class="pill r">Remote</span><span class="pill r">Part-time</span></div>
+        <h3>Executive Assistant</h3>
+        <div class="org">Real estate owner, multi-property portfolio</div>
+        <ul>
+          <li>Ran day-to-day operations, including tenant communications and move-in / move-out coordination</li>
+          <li>Created and tracked maintenance work orders, scheduled vendors, collected W-9 / EFT details and secured approvals</li>
+          <li>Processed and coded invoices and bills; kept payment, work-order and vendor-compliance records organized</li>
+          <li>Maintained property management system records and supported reporting and reconciliations</li>
+        </ul>
+      </li>
+      <li>
+        <div class="when">Aug 2024 – Nov 2025 <span class="pill g">On-site · Cebu City</span></div>
+        <h3>Accounting Assistant</h3>
+        <div class="org">Department of Health</div>
+        <ul>
+          <li>Answered internal finance queries promptly, reducing delays in financial processing</li>
+          <li>Prepared GAAP-aligned reports and supporting documents for audit</li>
+        </ul>
+      </li>
+      <li class="remote">
+        <div class="when">May 2024 – Jan 2026 <span class="pill r">Remote</span></div>
+        <h3>Accounting Assistant</h3>
+        <div class="org">GoHireVirtual · construction-industry bookkeeping</div>
+        <ul>
+          <li>Handled bookkeeping and accounting tasks on time and accurately</li>
+          <li>Supported financial data management and reconciliation across multiple accounts</li>
+          <li>Managed invoicing, purchase orders and payment tracking</li>
+        </ul>
+      </li>
+      <li>
+        <div class="when">Jan 2024 – Aug 2024 <span class="pill g">On-site · Cebu City</span></div>
+        <h3>Accounting Associate</h3>
+        <div class="org">Diaz Murillo Dalupan CPAs</div>
+        <ul>
+          <li>Filed BIR tax returns and audited financial documents for compliance</li>
+          <li>Monitored and updated client ledgers according to GAAP</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="blk" id="credentials">
+  <div class="wrap">
+    <div class="acct"><span class="acct-no">Acct 6000</span><h2>Credentials &amp; tools</h2></div>
+    <div class="creds">
+      <div class="card">
+        <h3>Credentials</h3>
+        <div class="cred"><div class="seal">BSA</div><div><b>Bachelor of Science in Accountancy</b><span>University of San Jose-Recoletos · 2019 – Jan 2024</span></div></div>
+        <div class="cred"><div class="seal">CTT</div><div><b>Certified Tax Technician</b><span>April 2023</span></div></div>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <div class="tg"><div class="k">Accounting</div><div class="chips"><span class="chip">QuickBooks</span><span class="chip">Excel</span></div></div>
+        <div class="tg"><div class="k">CRM &amp; phone</div><div class="chips"><span class="chip">Performology</span><span class="chip">Lead Management Lab</span><span class="chip">Gateway</span><span class="chip">RingCentral</span></div></div>
+        <div class="tg"><div class="k">Workspace &amp; design</div><div class="chips"><span class="chip">Google Workspace</span><span class="chip">Notion</span><span class="chip">Canva</span></div></div>
+        <div class="tg"><div class="k">Standards &amp; compliance</div><div class="chips"><span class="chip">GAAP</span><span class="chip">BIR tax returns</span><span class="chip">W-9 / EFT vendor setup</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- CTA -->
+<footer class="cta" id="contact">
+  <div class="wrap">
+    <div class="cta-grid">
+      <div>
+        <h2>Let's get your books <span class="u">balanced</span>.</h2>
+        <p>Remote bookkeeping and executive support from Cebu City, Philippines. Send a note with what's on your plate and I'll reply with how I'd take it on.</p>
+      </div>
+      <div>
+        <div class="btns" style="margin-bottom:16px">
+          <button class="btn primary" type="button" data-copy-email>Copy email</button>
+          <a class="btn" href="https://www.linkedin.com/in/jenifer-basalo-a15476172/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="contact">Email · <b>jeniferbasalo13@gmail.com</b><br>Base · <b>Cebu City, PH (UTC+8)</b></div>
+      </div>
+    </div>
+    <div class="foot"><span><span class="tk">✓</span> Every fact here ticks to her résumé. Work samples use fictional names and figures.</span><span>© 2026 Jenifer Basalo</span></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var EMAIL='jeniferbasalo13@gmail.com';
+  var toast=document.getElementById('toast'), tt;
+  function say(m){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show')},2600)}
+  function fallbackCopy(){
+    try{var ta=document.createElement('textarea');ta.value=EMAIL;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();var ok=document.execCommand('copy');document.body.removeChild(ta);return ok}catch(e){return false}
+  }
+  document.querySelectorAll('[data-copy-email]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var done=function(){say('Copied: '+EMAIL)}, fail=function(){ if(fallbackCopy()) done(); else say('Email: '+EMAIL) };
+      try{ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(EMAIL).then(done,fail)} else fail() }catch(e){fail()}
+    });
+  });
+
+  // Hide the résumé button if resume.pdf hasn't been uploaded yet
+  var rb=document.querySelector('[data-resume]');
+  if(rb){ try{ fetch('resume.pdf',{method:'HEAD'}).then(function(r){ if(!r.ok) rb.style.display='none' }).catch(function(){ rb.style.display='none' }) }catch(e){ rb.style.display='none' } }
+
+  // Scroll-spy
+  var links=[].slice.call(document.querySelectorAll('.nav a'));
+  var map={}; links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+  function activate(id){
+    links.forEach(function(a){a.classList.toggle('active',a===map[id])});
+    var a=map[id]; if(a){var ul=a.closest('ul'); var l=a.offsetLeft-ul.clientWidth/2+a.clientWidth/2; ul.scrollTo({left:l,behavior:'smooth'})}
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)activate(e.target.id)})},{rootMargin:'-40% 0px -55% 0px'});
+    Object.keys(map).forEach(function(id){var el=document.getElementById(id); if(el) io.observe(el)});
+  }
+
+  // ---------- Bank reconciliation (all math in cents) ----------
+  var OPEN=1248000;
+  var book=[
+    {d:'10/02',t:'Deposit · progress billing #1042',a:825000,on:true},
+    {d:'10/05',t:'Chk 2201 · Harbor Lumber',a:-341275,on:true},
+    {d:'10/09',t:'Chk 2202 · Delta Electric',a:-280000,on:true},
+    {d:'10/15',t:'Deposit · client retainer',a:450000,on:true},
+    {d:'10/22',t:'Chk 2203 · Summit Rentals',a:-116540,on:true},
+    {d:'10/29',t:'Chk 2204 · Northline Plumbing',a:-215000,on:false},
+    {d:'10/31',t:'Deposit · progress billing #1047',a:630000,on:false}
+  ];
+  var bank=[
+    {d:'10/03',t:'Deposit',a:825000},
+    {d:'10/07',t:'Check 2201',a:-341275},
+    {d:'10/13',t:'Check 2202',a:-280000},
+    {d:'10/16',t:'Deposit',a:450000},
+    {d:'10/24',t:'Check 2203',a:-116540},
+    {d:'10/31',t:'Service fee',a:-3500,only:true},
+    {d:'10/31',t:'Interest earned',a:412,only:true}
+  ];
+  var ticked=book.map(function(){return false});
+  function sum(arr){return arr.reduce(function(s,x){return s+x},0)}
+  function fmt(c){var n=Math.abs(c)/100;var s=n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});return c<0?'('+s+')':s}
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+  var BOOKBAL=OPEN+sum(book.map(function(b){return b.a}));
+  var BANKBAL=OPEN+sum(bank.map(function(b){return b.a}));
+  document.getElementById('bookBal').textContent=fmt(BOOKBAL);
+  document.getElementById('bankBal').textContent=fmt(BANKBAL);
+
+  var bookEl=document.getElementById('book');
+  book.forEach(function(b,i){
+    var row=document.createElement('label'); row.className='lrow';
+    row.innerHTML='<input type="checkbox" aria-label="On statement: '+esc(b.t)+'"><span class="d">'+b.d+'</span><span class="t">'+esc(b.t)+'</span><span class="a">'+fmt(b.a)+'</span>';
+    var cb=row.querySelector('input');
+    cb.addEventListener('change',function(){ticked[i]=cb.checked;row.classList.toggle('on',cb.checked);calc()});
+    bookEl.appendChild(row);
+  });
+  var bankEl=document.getElementById('bank');
+  bank.forEach(function(b){
+    var r=document.createElement('div'); r.className='brow'+(b.only?' bankonly':'');
+    r.innerHTML='<span class="d">'+b.d+'</span><span class="t">'+esc(b.t)+'</span><span class="a">'+fmt(b.a)+'</span>';
+    bankEl.appendChild(r);
+  });
+
+  function line(label,val,cls){return '<div class="wl '+(cls||'')+'"><span>'+label+'</span><span class="a">'+val+'</span></div>'}
+  function calc(){
+    var dit=[],oc=[];
+    book.forEach(function(b,i){ if(!ticked[i]){ (b.a>0?dit:oc).push(b) } });
+    var ditT=sum(dit.map(function(b){return b.a})), ocT=sum(oc.map(function(b){return b.a}));
+    var adjBank=BANKBAL+ditT+ocT;
+    var h=line('Statement balance',fmt(BANKBAL));
+    h+=line('Add: deposits in transit',fmt(ditT));
+    dit.forEach(function(b){h+=line(esc(b.t),fmt(b.a),'sub')});
+    h+=line('Less: outstanding checks',fmt(ocT));
+    oc.forEach(function(b){h+=line(esc(b.t),fmt(b.a),'sub')});
+    h+=line('Adjusted bank balance',fmt(adjBank),'res');
+    document.getElementById('wkBank').innerHTML=h;
+
+    var only=bank.filter(function(b){return b.only});
+    var adjBook=BOOKBAL+sum(only.map(function(b){return b.a}));
+    var k=line('Book balance',fmt(BOOKBAL));
+    only.forEach(function(b){k+=line((b.a<0?'Less: ':'Add: ')+b.t.toLowerCase(),fmt(b.a))});
+    k+=line('Adjusted book balance',fmt(adjBook),'res');
+    document.getElementById('wkBook').innerHTML=k;
+
+    var diff=adjBank-adjBook, v=document.getElementById('verdict');
+    var correct=book.every(function(b,i){return ticked[i]===b.on});
+    if(diff===0&&correct){
+      v.className='verdict good';
+      v.innerHTML='<span class="big">Reconciled ✓</span><p>Both sides adjust to <b class="num">'+fmt(adjBank)+'</b>. Check 2204 and the 10/31 deposit are timing items; the $35.00 fee and $4.12 interest still need journal entries in the books.</p>';
+    }else{
+      v.className='verdict bad';
+      var n=ticked.filter(Boolean).length;
+      v.innerHTML='<span class="big">Off by <span class="num">'+fmt(Math.abs(diff))+'</span></span><p>'+(n===0?'Start by ticking the first deposit. Each book entry you find on the statement stops being a reconciling item.':'Compare amounts and check numbers against the statement. An entry ticked in error, or one you missed, shows up here as the difference.')+'</p>';
+    }
+  }
+  function setAll(fn){
+    bookEl.querySelectorAll('.lrow').forEach(function(row,i){var cb=row.querySelector('input');cb.checked=fn(i);ticked[i]=cb.checked;row.classList.toggle('on',cb.checked)});
+    calc();
+  }
+  document.getElementById('auto').addEventListener('click',function(){setAll(function(i){return book[i].on})});
+  document.getElementById('reset').addEventListener('click',function(){setAll(function(){return false})});
+  calc();
+})();
+</script>
+</body>
+</html>
